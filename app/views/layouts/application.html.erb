@@ -32,12 +32,14 @@
         <li class="<%= 'active' if params[:action] == 'pag2' %>">
           <%= link_to 'Pagina 2', pags_pag2_path %>
         </li>
+        <li class="<%= 'active' if params[:action] == 'pag3' %>">
+          <%= link_to 'Pagina 3', pags_pag3_path %>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <div class="container">
-  <%= params %>
   <%= image_tag 'foto.jpg' %>
   <%= yield %>
 </div>
