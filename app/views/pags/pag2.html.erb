@@ -1,8 +1,18 @@
+<script>
+
+$(function(){
+  $('#btn1').click(function(){
+    $.backstretch("/assets/foto.jpg");
+  });
+});
+
+</script>
 <h1>Bienvenido a la página dos...</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nisi, voluptate aperiam! Ipsa quaerat harum animi, omnis dolores blanditiis vitae numquam quo maiores consequuntur nemo ex a non molestias facere!</p>
+<button type="button" id='btn1' class="btn btn-default" aria-label="Left Align">Activar fondo responsivo</button>
 
 <p>
-  Los alumnos del curso son <%= @users[0] %>, <%= @users[1] %>, <%= @users[2] %>, <%= @users[3] %>
+  Los alumnos del curso son <%= iterate_users %>
 </p>
 
 <%= image_tag 'camera.jpg' %>
