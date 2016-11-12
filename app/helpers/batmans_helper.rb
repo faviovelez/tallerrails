@@ -1,0 +1,2 @@
+module BatmansHelper
+end
